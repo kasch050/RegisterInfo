@@ -18,7 +18,7 @@ Um das Modul über Composer zu installieren, gehe wie folgt vor:
 2. Füge das Modul zu deinem Projekt hinzu, indem du folgenden Befehl ausführst:
 
     ```bash
-    composer require Kasch/RegisterInfo
+    composer require kasch/module-register-info
     ```
 
 3. Nachdem das Modul heruntergeladen wurde, führe die folgenden Magento-Befehle aus, um das Modul zu installieren:
