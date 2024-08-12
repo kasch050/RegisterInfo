@@ -1,11 +1,6 @@
 {
   "name": "kasch/module-register-info",
   "version": "1.0.0",
-  "repositories": [ {
-      "type": "vcs",
-      "url": "https://github.com/kasch050/RegisterInfo"
-  }
-    ],
   "description": "Eine einfache Erweiterung, um zu fragen, wie der Kunde von der Website erfahren hat.",
   "type": "magento2-module",
   "require": {
