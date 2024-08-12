@@ -1,0 +1,43 @@
+<?php
+/**
+ * @var Attributes $block
+ */
+
+use Kasch\RegisterInfo\Block\Customer\Attributes\Attributes;
+?>
+
+<div class="field">
+    <label class="label" for="" style="margin-bottom: 8px;display: block;">
+        <span><strong><?= __($block->getCustomerAttributeFrontendLabel()) ?></strong></span>
+    </label>
+    <div class="control">
+        <?php $options = $block->getCustomerAttributeOptions(); ?>
+        <?php if (!empty($options)): ?>
+            <select name="hear_from_us" style="cursor: pointer;">
+                <?php foreach ($options as $option): ?>
+                    <option value="<?= $block->escapeHtml($option->getValue()) ?>">
+                        <?= $block->escapeHtml($option->getLabel()) ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
+        <?php endif; ?>
+    </div>
+</div>
+
+<div class="other-input-container" style="display: none; margin-top: 22px;">
+    <div class="field">
+        <label class="label" for="" style="margin-bottom: 8px;display: block;">
+            <span><strong><?= __($block->getCustomerAttributeFrontendLabel('other_input')) ?></strong></span>
+        </label>
+        <div class="control">
+            <input type="text" style="cursor: pointer;"
+                   id="other_input"
+                   name="other_input"
+                   value=""
+                   title="<?= __('Other Input') ?>"
+                   class="input-text"
+                   autocomplete="off" />
+        </div>
+    </div>
+</div>
+

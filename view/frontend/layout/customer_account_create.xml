@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <script src="Kasch_RegisterInfo::js/register-info-utils.js"/>
+    </head>
+    <body>
+        <referenceContainer name="form.additional.info">
+        <container name="container_register_info_attribute" htmlTag="div" htmlClass="container-register-info-attribute">
+            <block class="Kasch\RegisterInfo\Block\Customer\Attributes\Attributes" name="register_info_attribute" template="Kasch_RegisterInfo::customer/form/attribute.phtml">
+                <arguments>
+                    <argument name="hear_from_us" xsi:type="string">register_info_attribute</argument>
+                </arguments>
+            </block>
+        </container>
+        </referenceContainer>
+    </body>
+</page>
