@@ -1,6 +1,5 @@
 {
   "name": "kasch/registerinfo",
-  "version": "1.0.3",
   "description": "Eine einfache Erweiterung, um zu fragen, wie der Kunde von der Website erfahren hat.",
   "type": "magento2-module",
   "require": {
